@@ -24,14 +24,62 @@
     <div class="body-img2">
       <img :src="ad2" />
     </div>
+    <div class="body-jd">
+      <div class="jd-left">家电</div>
+      <div class="jd-nav-left">电视影音</div>
+      <div class="jd-nav-right">热门</div>
+    </div>
+    <div class="body-jds">
+      <div class="jds-left">
+        <div class="jds-left-top">
+          <img :src="jd1" />
+        </div>
+        <div class="jds-left-bottom">
+          <img :src="jd2" />
+        </div>
+      </div>
+      <div class="jds-right">
+        <ul>
+          <li class="jds-content" v-for="jd in jds" :key="jd.index">
+            <img :src="jd.img" />
+            <p class="text">{{ jd.text }}</p>
+            <p class="desc">{{ jd.desc }}</p>
+            <p class="price">
+              {{ jd.price }}
+            </p>
+          </li>
+          <ul class="jds-items">
+          <span class="jds-item">
+            <ul>
+              <li class="jds-item-top">
+                <img :src="jd3" />
+                <p class="top-text">Air 13.3" 2019 款</p>
+                <p class="bottom-text">4999元起</p>
+              </li>
+              <li class="jds-item-bottom">
+                <img :src="bottom" />
+                <p class="top-text1">浏览更多</p>
+                <p class="bottom-text1">热门</p>
+              </li>
+            </ul>
+          </span>
+        </ul>
+        </ul>
+      </div>
+    </div>
   </div>
 </template>
 <script>
+import "..//assets/css/content.css"
 export default {
   name: "content",
   data() {
     return {
+      jd1: "img/body-tv1.webp",
+      jd2: "img/body-tv2.webp",
+      jd3: "img/tv-right1.webp",
       ad1: "img/alpha.webp",
+      bottom: "img/bottom.png",
       phones: [
         {
           img: "img/phone1.webp",
@@ -83,102 +131,51 @@ export default {
         },
       ],
       ad2: "img/body-img2.webp",
+      jds: [
+        {
+          img: "img/tv1.webp",
+          text: "小米4A",
+          desc: "人工智能系统， 高效液晶屏",
+          price: "3799元起",
+        },
+        {
+          img: "img/tv2.jpg",
+          text: "小米4A",
+          desc: "人工智能系统， 高效液晶屏",
+          price: "3799元起",
+        },
+        {
+          img: "img/tv3.jpg",
+          text: "小米4A",
+          desc: "人工智能系统， 高效液晶屏",
+          price: "3799元起",
+        },
+        {
+          img: "img/tv4.png",
+          text: "小米4A",
+          desc: "人工智能系统， 高效液晶屏",
+          price: "3799元起",
+        },
+        {
+          img: "img/tv5.jpg",
+          text: "小米4A",
+          desc: "人工智能系统， 高效液晶屏",
+          price: "3799元起",
+        },
+        {
+          img: "img/tv1.webp",
+          text: "小米4A",
+          desc: "人工智能系统， 高效液晶屏",
+          price: "3799元起",
+        },
+        {
+          img: "img/tv2.jpg",
+          text: "小米4A",
+          desc: "人工智能系统， 高效液晶屏",
+          price: "3799元起",
+        },
+      ],
     };
   },
 };
 </script>
-<style>
-.body-phone {
-  height: 58px;
-  width: 1226px;
-  font-size: 20px;
-  color: #333;
-  margin: 0 auto;
-  display: flow-root;
-  vertical-align: top;
-}
-.body-phone .phone-left {
-  float: left;
-}
-.body-phone .phone-nav {
-  float: right;
-  font-size: 16px;
-  color: #424242;
-}
-.body-phones {
-  width: 1226px;
-  margin: 0 auto;
-}
-.body-phones .phones-left {
-  height: 614px;
-  width: 234px;
-  /* margin-top: 164px; */
-  display: inline-block;
-  vertical-align: top;
-  cursor: pointer;
-}
-.phones-right {
-  height: 614px;
-  width: 992px;
-  display: inline-block;
-  vertical-align: top;
-  cursor: pointer;
-}
-.phones-right li {
-  float: left;
-  text-align: center;
-  font-size: 14px;
-  width: 234px;
-  height: 260px;
-  padding: 20px 0;
-  margin-left: 14px;
-  margin-bottom: 14px;
-  background-color: #fff;
-  box-shadow: 0px 0px 20px -8px #b0b0b0;
-}
-.phones-right ul {
-  float: left;
-}
-.phones-right li img {
-  width: 200px;
-  height: 120px;
-  margin: 10px 0;
-}
-.phones-right li .text {
-  margin-top: 20px;
-  height: 21px;
-  font-size: 14px;
-}
-.phones-right li .desc {
-  color: #b0b0b0;
-  margin-top: 10px;
-  font-size: 12px;
-  height: 21px;
-}
-.phones-right li .price {
-  color: #ff6709;
-  margin-top: 10px;
-  font-size: 14px;
-  height: 21px;
-}
-.body-img2 {
-  width: 1226px;
-  margin: 0 auto;
-}
-.body-img2 img {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  float: left;
-  cursor: pointer;
-}
-.phones-left:hover {
-  transform: scale(1.02);
-  transition: all 0.3s;
-  box-shadow: 0px 0px 20px 1px #b0b0b0;
-}
-.phones-right ul li:hover {
-  transform: scale(1.02);
-  transition: all 0.3s;
-  box-shadow: 0px 0px 20px 1px #b0b0b0;
-}
-</style>
