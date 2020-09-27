@@ -14,14 +14,6 @@ export default new Router(
             name: 'home'
         }, //首页
         {
-            path: '/Home',
-            component: resolve => require(['../pages/Home.vue'], resolve),
-            meta: {
-                auth: true
-            },
-            name: 'home'
-        }, //首页
-        {
             path: '/Nav',
             component: resolve => require(['../components/nav.vue'], resolve),
             meta: {

@@ -5,6 +5,7 @@
        <m-share></m-share>
        <m-Bodynav></m-Bodynav>
        <m-content></m-content>
+       <m-foot></m-foot>
    </div>
 
 </template>
@@ -15,6 +16,7 @@ import nav from '../components/nav.vue'
 import share from '../components/share.vue'
 import Bodynav from '../components/Bodynav.vue'
 import content from "../components/content.vue"
+import foot from "../components/foot.vue"
 export default {
     name: 'Home',
     data(){
@@ -30,6 +32,7 @@ export default {
         "m-share":share,
         "m-Bodynav":Bodynav,
         "m-content":content,
+        "m-foot":foot,
     },
     create(){
 
@@ -38,5 +41,4 @@ export default {
 </script>
 
 <style>
-
 </style>
