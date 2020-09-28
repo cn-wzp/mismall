@@ -8,6 +8,7 @@
        <m-Bodynav></m-Bodynav>
        <m-content></m-content>
        <m-foot></m-foot>
+       <m-rightnav></m-rightnav>
    </div>
 
 </template>
@@ -21,6 +22,7 @@ import content from "../components/content.vue"
 import foot from "../components/foot.vue"
 import Login from '../components/Login.vue'
 import Reg from '../components/Reg.vue'
+import rightnav from "../components/rightnav.vue"
 export default {
     name: 'Home',
     data(){
@@ -40,6 +42,7 @@ export default {
         "m-foot":foot,
         "Login":Login,
         "Reg":Reg,
+        "m-rightnav":rightnav,
     },
     create(){
 

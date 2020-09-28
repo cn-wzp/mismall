@@ -72,7 +72,7 @@
 <script>
 import "..//assets/css/content.css"
 export default {
-  name: "content",
+  name: "contents",
   data() {
     return {
       jd1: "img/body-tv1.webp",
