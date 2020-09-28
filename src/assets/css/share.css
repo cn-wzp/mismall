@@ -130,7 +130,7 @@
   .box-left .box-left-a .a-herf {
     padding-top: 18px;
     text-overflow: ellipsis;
-    color: #fff;
+    color:rgba(255, 255, 255, 0.603);
     opacity: 0.7;
     transition: opacity 0.2s;
     cursor: pointer;
@@ -194,4 +194,7 @@
     width:316px;
     height:170px;
     margin-left: 20px;
+  }
+  .box-left .box-left-a .a-herf:hover p{
+    color: #fff;
   }

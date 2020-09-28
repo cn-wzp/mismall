@@ -1,3 +1,6 @@
+.body-container{
+  background-color: #F5F5F5;
+}
 .body-phone {
     height: 58px;
     width: 1226px;
@@ -15,7 +18,19 @@
     float: right;
     font-size: 16px;
     color: #424242;
+    cursor: pointer;
   }
+  .body-phone  .iconfont{
+    font-size:14px;
+    color: #757575;
+  }
+  .phone-nav:hover {
+    color: #ff6709;
+}
+
+.phone-nav:hover span {
+    color: #ff6709;
+}
   .body-phones {
     width: 1226px;
     margin: 0 auto;

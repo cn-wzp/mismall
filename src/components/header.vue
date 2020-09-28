@@ -30,14 +30,14 @@
       </div>
       <div class="right">
         <div class="shop">
-          <img src="/img/xiaomigouwuche.svg" />
+          <i class="iconfont icon-xiaomigouwuche"></i>
           购物车({{num}})
           <div class="shp">购物车里还没有商品，快来选购吧！</div>
         </div>
         <div class="sign">
-          <a>登录</a>
+          <a @click="userl" v-if="this.$store.state.lon==0">登录</a>
           <span>|</span>
-          <a>注册</a>
+          <a @click="userr" v-if="this.$store.state.lon==0">注册</a>
           <span>|</span>
           <a>消息通知</a>
         </div>
@@ -46,6 +46,8 @@
   </header>
 </template>
 <script>
+// import Login from '../components/Login.vue'
+// import Reg from '../components/Reg.vue'
 export default {
   name: "Header",
   data() {
@@ -54,6 +56,18 @@ export default {
     };
   },
   components: {},
+  methods:{
+      userl(){
+        this.$store.state.show=1
+      },
+      userr(){
+        this.$store.state.show=2
+      },
+      eic(){
+        this.$store.state.lon=0
+        this.$store.state.token=null
+      }
+    }
 };
 </script>
 <style>

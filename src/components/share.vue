@@ -53,7 +53,7 @@
               <span class="a-top"></span>
               <div class="a-none"></div>
               <img class="a-img" :src="mi.img" />
-              {{ mi.id }}
+              <p>{{ mi.id }}</p>
               <span class="a-right"></span>
             </a>
           </li>

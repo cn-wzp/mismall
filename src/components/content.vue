@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div class="body-container">
     <div class="body-phone">
       <p class="phone-left">手机</p>
-      <p class="phone-nav">查看全部</p>
+      <p class="phone-nav">查看全部  <span class="iconfont icon-yuanquanyoujiantou-"></span></p>
     </div>
     <div class="body-phones">
       <div class="phones-left">

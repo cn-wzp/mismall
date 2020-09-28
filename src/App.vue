@@ -6,9 +6,14 @@
 </template>
 
 <script>
-
 export default {
+  data(){
+      return{
+        
+      }
+  },
   components: {
+    
   },
   name: "App",
 };

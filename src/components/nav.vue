@@ -108,6 +108,7 @@
         </ul>
         <div>
           <span class="input-a">小米10 Pro 5G</span>
+          
           <span class="input-a">Redmi k30 pro 5g</span>
         </div>
       </div>
@@ -241,6 +242,7 @@ input {
   padding: 0.7px;
   background-color: #eee;
   cursor: pointer;
+  margin-left: 4px;
 }
 .n-input ul {
   width: 245px;
